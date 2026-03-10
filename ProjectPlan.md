@@ -6,7 +6,7 @@ Research or Business Question(s):
 
 Datasets:
   
-  Flight Operations / Passenger Demand (Ethan)
+    Dataset 1: Flight Operations / Passenger Demand (Ethan)
     
     Source:
     
@@ -18,7 +18,7 @@ Datasets:
     
     Description:
   
-  Jet fuel prices in past 5 years (Mustafa)
+    Dataset 2: Jet fuel prices in past 5 years (Mustafa)
     
     Source: U.S. Energy Information Administration (EIA) via Federal Reserve Economic Data (FRED)
     
@@ -30,7 +30,7 @@ Datasets:
     
     Description: This dataset provides daily spot prices for kerosene-type jet fuel in the U.S. Gulf Coast market, which is one of the primary fuel pricing benchmarks used by airlines in North America. The dataset is reported in dollars per gallon and is not seasonally adjusted. For this project, we will focus on the last five years of data (2021–2026) to analyze recent pricing dynamics. Because airline ticket pricing data is typically available at a monthly or quarterly frequency, the daily fuel price observations might need to be aggregated to a monthly average to enable integration with other datasets.
   
-  Airline Ticket Prices (Chenxi)
+    Dataset 3: Airline Ticket Prices (Chenxi)
     
     Source:
     
