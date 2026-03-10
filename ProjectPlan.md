@@ -2,7 +2,7 @@ Overview: The goal of this project is to analyze how airline ticket prices chang
 
 Team: 
 
-Research or Business Question(s): 
+Research or Business Question(s): How do fuel prices and passenger demand influence airline ticket prices and flight volumes in the U.S. airline market?
 
 Datasets:
   
