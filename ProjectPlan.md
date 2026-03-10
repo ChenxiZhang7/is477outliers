@@ -2,6 +2,15 @@ Overview: The goal of this project is to analyze how airline ticket prices chang
 
 Team: 
 
+  Our project team consists of three members, each responsible for managing one dataset and contributing to integration and analysis.
+
+  Fuel Cost Analysis (Mustafa): Collect and process the jet fuel price dataset, Clean and format fuel price data, Preparing the dataset for integration with other datasets
+
+  Ticket Price Analysis (Chenxi): Responsible for collecting airline ticket price data, Cleaning price data and ensuring consistent formatting, Aggregating ticket prices by time period, Preparing dataset for integration
+
+  Demand and Passenger Data Analysis (Ethan): Responsible for collecting airline demand data (e.g., passenger counts or load factors), Cleaning and preparing passenger demand dataset, Standardizing time variables, Assisting with final integration and visualization
+
+
 Research or Business Question(s): How do fuel prices and passenger demand influence airline ticket prices and flight volumes in the U.S. airline market?
 
 Datasets:
