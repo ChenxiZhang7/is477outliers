@@ -45,14 +45,14 @@ Datasets:
   
     Dataset 3: Airline Ticket Prices (Chenxi)
     
-    Source:
-    
-    Dataset:
-    
-    Link:
-    
-    Variables: 
-    
+    Source: U.S. Bureau of Labor Statistics (BLS) via Federal Reserve Economic Data (FRED)
+
+    Dataset: Consumer Price Index for All Urban Consumers: Airline Fares in U.S. City Average 
+
+    Link: https://fred.stlouisfed.org/series/CUUR0000SETG01
+
+    Variables: Airfare price index (Consumer Price Index) & Date
+
     Description: 
 
 Timeline:
