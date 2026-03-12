@@ -39,30 +39,30 @@ Datasets:
    Variables: Date, Passenger throughput (# of passengers screened)
    
    Description: This dataset reports the number of passengers moving through TSA airport security checkpoints each day in the United States; passenger throughput can be used as a proxy for airline travel demand because most commercial airline passengers pass through TSA screening before departure. Also, for this project, we will use data from 2021 to 2026 to align with the fuel price and airline ticket price           datasets. Moreover, because the fuel and ticket price data will be analyzed at a monthly level, the daily TSA data will likely be aggregated into monthly passenger totals or averages for integration.
+   
+  Dataset 2: Jet fuel prices in past 5 years (Mustafa)
+    
+  Source: U.S. Energy Information Administration (EIA) via Federal Reserve Economic Data (FRED)
   
-    Dataset 2: Jet fuel prices in past 5 years (Mustafa)
-    
-    Source: U.S. Energy Information Administration (EIA) via Federal Reserve Economic Data (FRED)
-    
-    Dataset: Kerosene-Type Jet Fuel Prices: U.S. Gulf Coast (DJFUELUSGULF)
-    
-    Link: https://fred.stlouisfed.org/series/DJFUELUSGULF
-    
-    Variables: Jet fuel price (Dollars per gallon) and Date
-    
-    Description: This dataset provides daily spot prices for kerosene-type jet fuel in the U.S. Gulf Coast market, which is one of the primary fuel pricing benchmarks used by airlines in North America. The dataset is reported in dollars per gallon and is not seasonally adjusted. For this project, we will focus on the last five years of data (2021–2026) to analyze recent pricing dynamics. Because airline ticket pricing data is typically available at a monthly or quarterly frequency, the daily fuel price observations might need to be aggregated to a monthly average to enable integration with other datasets.
+  Dataset: Kerosene-Type Jet Fuel Prices: U.S. Gulf Coast (DJFUELUSGULF)
   
-    Dataset 3: Airline Ticket Prices (Chenxi)
-    
-    Source: U.S. Bureau of Labor Statistics (BLS) via Federal Reserve Economic Data (FRED)
+  Link: https://fred.stlouisfed.org/series/DJFUELUSGULF
+  
+  Variables: Jet fuel price (Dollars per gallon) and Date
+  
+  Description: This dataset provides daily spot prices for kerosene-type jet fuel in the U.S. Gulf Coast market, which is one of the primary fuel pricing benchmarks used by airlines in North America. The dataset is reported in dollars per gallon and is not seasonally adjusted. For this project, we will focus on the last five years of data (2021–2026) to analyze recent pricing dynamics. Because airline ticket pricing data is typically available at a monthly or quarterly frequency, the daily fuel price observations might need to be aggregated to a monthly average to enable integration with other datasets.
 
-    Dataset: Consumer Price Index for All Urban Consumers: Airline Fares in U.S. City Average 
+  Dataset 3: Airline Ticket Prices (Chenxi)
+  
+  Source: U.S. Bureau of Labor Statistics (BLS) via Federal Reserve Economic Data (FRED)
 
-    Link: https://fred.stlouisfed.org/series/CUUR0000SETG01
+  Dataset: Consumer Price Index for All Urban Consumers: Airline Fares in U.S. City Average 
 
-    Variables: Airfare price index (Consumer Price Index) & Date
+  Link: https://fred.stlouisfed.org/series/CUUR0000SETG01
 
-    Description: This dataset provides a monthly index for measuring changes in air ticket prices in the United States. These data are from the consumer price index (CPI) released by the Bureau of Labor Statistics of the United States and are published through the Federal Reserve's Economic Data (FRED) database. The air ticket price index reflects the average price trend of air tickets purchased by consumers in American cities. In our project, the dataset will be used to represent the overall trend of air ticket prices in the US market. Since the data is reported monthly, it can be easily integrated with other. By combining jet fuel price data and passenger demand data, this dataset will help analyze how fluctuations in fuel costs and travel demand affect air ticket pricing over time.
+  Variables: Airfare price index (Consumer Price Index) & Date
+
+  Description: This dataset provides a monthly index for measuring changes in air ticket prices in the United States. These data are from the consumer price index (CPI) released by the Bureau of Labor Statistics of the United States and are published through the Federal Reserve's Economic Data (FRED) database. The air ticket price index reflects the average price trend of air tickets purchased by consumers in American cities. In our project, the dataset will be used to represent the overall trend of air ticket prices in the US market. Since the data is reported monthly, it can be easily integrated with other. By combining jet fuel price data and passenger demand data, this dataset will help analyze how fluctuations in fuel costs and travel demand affect air ticket pricing over time.
 
 
 
