@@ -29,17 +29,17 @@ How do fuel prices and passenger demand influence airline ticket prices and flig
 
 Datasets:
   
-    Dataset 1: Flight Operations / Passenger Demand (Ethan)
+   Dataset 1: Flight Operations / Passenger Demand (Ethan)
+   
+   Source: Transportation Security Administration (TSA)
     
-    Source:
+   Dataset: TSA Checkpoint Travel Numbers
     
-    Dataset:
-    
-    Link:
-    
-    Variables: 
-    
-    Description:
+   Link: https://www.tsa.gov/travel/passenger-volumes
+   
+   Variables: Date, Passenger throughput (# of passengers screened)
+   
+   Description: This dataset reports the number of passengers moving through TSA airport security checkpoints each day in the United States; passenger throughput can be used as a proxy for airline travel demand because most commercial airline passengers pass through TSA screening before departure. Also, for this project, we will use data from 2021 to 2026 to align with the fuel price and airline ticket price           datasets. Moreover, because the fuel and ticket price data will be analyzed at a monthly level, the daily TSA data will likely be aggregated into monthly passenger totals or averages for integration.
   
     Dataset 2: Jet fuel prices in past 5 years (Mustafa)
     
@@ -116,3 +116,7 @@ Our analysis focuses on the latest data from about past five years. Although thi
 
 
 Gaps:
+
+Existing research looks at the relationship between airline ticket prices and individual factors such as fuel costs or overall travel demand; however, fewer analyses combine multiple operational and demand-related indicators in a single framework to evaluate how these factors actually interact over time. 
+
+Thus, this project aims to address that gap by integrating factors like jet fuel prices, passenger throughput data, and airline ticket price indices into one unified dataset. By analyzing these variables together, we therefore hope to better understand how cost pressures and demand conditions jointly influence airline pricing behavior in the U.S. market.
