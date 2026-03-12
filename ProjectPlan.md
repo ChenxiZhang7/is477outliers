@@ -58,6 +58,36 @@ Datasets:
 
 Timeline:
 
+
+Phase 1: Project Planning and Dataset Selection (March 1 – March 12)
+
+1.	Finalize research question related to fuel prices, passenger demand, and airline ticket prices.
+2.	Find appropriate datasets from reliable sources.
+3.	Review the structure of the datasets and confirm that they can be combined.
+4.	Set up the GitHub repository and organize the project files.
+5.	Prepare and submit the project plan.
+
+
+Phase 2: Data Cleaning and Integration (March 13 – March 31)
+
+1.	Collect the datasets related to airline ticket prices, passenger demand, and jet fuel prices.
+2.	Review the datasets to understand their structure and check for potential issues.
+3.	Clean the data, like handling missing values or adjusting formats.
+4.	Combine the datasets using shared attributes such as time period.
+5.	Create some charts or summary statistics to explore the data.
+6.	Write and submit the Status Report.
+
+
+Phase 3: Analysis and Final Project (April 1 – May 3)
+
+1.	Further analyze the relationship between fuel prices, ticket prices, and passenger demand.
+2.	Create visualizations to show important trends and patterns.
+3.	Prepare scripts that organize the data processing steps.
+4.	Document the data cleaning process and analysis workflow.
+5.	Write the final project report and organize the repository.
+6.	Submit the Final Project.
+
+
 Constraints:
 
 Gaps:
