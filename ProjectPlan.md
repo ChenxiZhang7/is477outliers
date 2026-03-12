@@ -24,7 +24,7 @@ The goal of this project is to analyze how airline ticket prices change in relat
 
 ## Research or Business Question: 
 
-How do fuel prices and passenger demand influence airline ticket prices and flight volumes in the U.S. airline market?
+How do fuel prices and passenger demand influence airline ticket prices in the U.S. airline market?
 
 
 ## Datasets:
@@ -62,7 +62,7 @@ How do fuel prices and passenger demand influence airline ticket prices and flig
 
   - Variables: Airfare price index (Consumer Price Index) & Date
 
-  - Description: This dataset provides a monthly index for measuring changes in air ticket prices in the United States. These data are from the consumer price index (CPI) released by the Bureau of Labor Statistics of the United States and are published through the Federal Reserve's Economic Data (FRED) database. The air ticket price index reflects the average price trend of air tickets purchased by consumers in American cities. In our project, the dataset will be used to represent the overall trend of air ticket prices in the US market. Since the data is reported monthly, it can be easily integrated with other. By combining jet fuel price data and passenger demand data, this dataset will help analyze how fluctuations in fuel costs and travel demand affect air ticket pricing over time.
+  - Description: This dataset provides a monthly index for measuring changes in air ticket prices in the United States. These data are from the consumer price index (CPI) released by the Bureau of Labor Statistics of the United States and are published through the Federal Reserve's Economic Data (FRED) database. The air ticket price index reflects the average price trend of air tickets purchased by consumers in American cities. In our project, the dataset will be used to represent the overall trend of air ticket prices in the US market. Since the data is reported monthly, it can be easily integrated with other data sets. By combining jet fuel price data and passenger demand data, this dataset will help analyze how fluctuations in fuel costs and travel demand affect air ticket pricing over time.
 
 
 
@@ -108,7 +108,7 @@ The jet fuel price dataset is reported daily, while the air ticket price is repo
 The dataset we use may not fully represent all aspects of the aviation market. For instance, the jet fuel dataset reflects fuel prices in the US Gulf Coast market, which is a major benchmark but may not represent fuel costs in all regions. Furthermore, the TSA's passenger throughput dataset measures the number of passengers passing through security checkpoints and may not fully represent the demands of airlines.
 
 ### External market influence:
-Air ticket prices are also influenced by many external factors that are not included in our datasets, such as competitions, economic factors or geopolitical events. Since these variables are not included, it may be difficult to tell the exact impact of fuel prices or passenger demand on air ticket prices.
+Air ticket prices are also influenced by many external factors that are not included in our datasets, such as competitions between Airlines, economic factors or geopolitical events. Since these variables are not included, it may be difficult to tell the exact impact of fuel prices or passenger demand on air ticket prices.
 
 ### Limited time coverage:
 Our analysis focuses on the latest data from about past five years. Although this helps us study the recent trends, it may limit our ability to observe the longer patterns of airline pricing or fuel cost changes.
