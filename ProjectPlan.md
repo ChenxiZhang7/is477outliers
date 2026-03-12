@@ -28,7 +28,7 @@ How do fuel prices and passenger demand influence airline ticket prices and flig
 
 ## Datasets:
   
-   Dataset 1: Flight Operations / Passenger Demand (Ethan)
+   ### Dataset 1: Flight Operations / Passenger Demand (Ethan)
    
    Source: Transportation Security Administration (TSA)
     
@@ -40,7 +40,7 @@ How do fuel prices and passenger demand influence airline ticket prices and flig
    
    Description: This dataset reports the number of passengers moving through TSA airport security checkpoints each day in the United States; passenger throughput can be used as a proxy for airline travel demand because most commercial airline passengers pass through TSA screening before departure. Also, for this project, we will use data from 2021 to 2026 to align with the fuel price and airline ticket price           datasets. Moreover, because the fuel and ticket price data will be analyzed at a monthly level, the daily TSA data will likely be aggregated into monthly passenger totals or averages for integration.
    
-  Dataset 2: Jet fuel prices in past 5 years (Mustafa)
+  ### Dataset 2: Jet fuel prices in past 5 years (Mustafa)
     
   Source: U.S. Energy Information Administration (EIA) via Federal Reserve Economic Data (FRED)
   
@@ -52,7 +52,7 @@ How do fuel prices and passenger demand influence airline ticket prices and flig
   
   Description: This dataset provides daily spot prices for kerosene-type jet fuel in the U.S. Gulf Coast market, which is one of the primary fuel pricing benchmarks used by airlines in North America. The dataset is reported in dollars per gallon and is not seasonally adjusted. For this project, we will focus on the last five years of data (2021–2026) to analyze recent pricing dynamics. Because airline ticket pricing data is typically available at a monthly or quarterly frequency, the daily fuel price observations might need to be aggregated to a monthly average to enable integration with other datasets.
 
-  Dataset 3: Airline Ticket Prices (Chenxi)
+  ### Dataset 3: Airline Ticket Prices (Chenxi)
   
   Source: U.S. Bureau of Labor Statistics (BLS) via Federal Reserve Economic Data (FRED)
 
