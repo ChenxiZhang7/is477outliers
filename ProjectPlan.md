@@ -8,7 +8,7 @@ The goal of this project is to analyze how airline ticket prices change in relat
 
 
 
-Team: 
+## Team: 
 
   Our project team consists of three members, each responsible for managing one dataset and contributing to integration and analysis.
 
@@ -21,12 +21,12 @@ Team:
 
 
 
-Research or Business Question(s): 
+## Research or Business Question(s): 
 
 How do fuel prices and passenger demand influence airline ticket prices and flight volumes in the U.S. airline market?
 
 
-Datasets:
+## Datasets:
   
    Dataset 1: Flight Operations / Passenger Demand (Ethan)
    
@@ -67,7 +67,7 @@ Datasets:
 
 
 
-Timeline:
+## Timeline:
 
 Phase 1: Project Planning and Dataset Selection (March 1 – March 12)
 
@@ -97,7 +97,7 @@ Phase 3: Analysis and Final Project (April 1 – May 3)
 
 
 
-Constraints:
+## Constraints:
 
 Some restrictions may affect the scope and interpretation of our analysis.
 
@@ -115,7 +115,7 @@ Our analysis focuses on the latest data from about past five years. Although thi
 
 
 
-Gaps:
+## Gaps:
 
 Existing research looks at the relationship between airline ticket prices and individual factors such as fuel costs or overall travel demand; however, fewer analyses combine multiple operational and demand-related indicators in a single framework to evaluate how these factors actually interact over time. 
 
