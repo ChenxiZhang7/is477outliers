@@ -69,7 +69,7 @@ How do fuel prices and passenger demand influence airline ticket prices and flig
 
 ## Timeline:
 
-Phase 1: Project Planning and Dataset Selection (March 1 – March 12)
+### Phase 1: Project Planning and Dataset Selection (March 1 – March 12)
 
 1.	Finalize research question related to fuel prices, passenger demand, and airline ticket prices.
 2.	Find appropriate datasets from reliable sources.
@@ -77,7 +77,7 @@ Phase 1: Project Planning and Dataset Selection (March 1 – March 12)
 4.	Set up the GitHub repository and organize the project files.
 5.	Prepare and submit the project plan.
 
-Phase 2: Data Cleaning and Integration (March 13 – March 31)
+### Phase 2: Data Cleaning and Integration (March 13 – March 31)
 
 1.	Collect the datasets related to airline ticket prices, passenger demand, and jet fuel prices.
 2.	Review the datasets to understand their structure and check for potential issues.
@@ -86,7 +86,7 @@ Phase 2: Data Cleaning and Integration (March 13 – March 31)
 5.	Create some charts or summary statistics to explore the data.
 6.	Write and submit the Status Report.
 
-Phase 3: Analysis and Final Project (April 1 – May 3)
+### Phase 3: Analysis and Final Project (April 1 – May 3)
 
 1.	Further analyze the relationship between fuel prices, ticket prices, and passenger demand.
 2.	Create visualizations to show important trends and patterns.
@@ -101,16 +101,16 @@ Phase 3: Analysis and Final Project (April 1 – May 3)
 
 Some restrictions may affect the scope and interpretation of our analysis.
 
-Data integration:
+### Data integration:
 The jet fuel price dataset is reported daily, while the air ticket price is reported monthly. To integrate these datasets, we will summarize the daily fuel prices into monthly average prices. This aggregation may mitigate short term fluctuations and make it more difficult to detect immediate responses between variables.
 
-Data representation:
+### Data representation:
 The dataset we use may not fully represent all aspects of the aviation market. For instance, the jet fuel dataset reflects fuel prices in the US Gulf Coast market, which is a major benchmark but may not represent fuel costs in all regions. Furthermore, the TSA's passenger throughput dataset measures the number of passengers passing through security checkpoints and may not fully represent the demands of airlines.
 
-External market influence:
+### External market influence:
 Air ticket prices are also influenced by many external factors that are not included in our datasets, such as competitions, economic factors or geopolitical events. Since these variables are not included, it may be difficult to tell the exact impact of fuel prices or passenger demand on air ticket prices.
 
-Limited time coverage:
+### Limited time coverage:
 Our analysis focuses on the latest data from about past five years. Although this helps us study the recent trends, it may limit our ability to observe the longer patterns of airline pricing or fuel cost changes.
 
 
