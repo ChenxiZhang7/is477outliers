@@ -101,7 +101,7 @@ Constraints:
 
 Some restrictions may affect the scope and interpretation of our analysis.
 
-Data frequency difference:
+Data integration:
 The jet fuel price dataset is reported daily, while the air ticket price is reported monthly. To integrate these datasets, we will summarize the daily fuel prices into monthly average prices. This aggregation may mitigate short term fluctuations and make it more difficult to detect immediate responses between variables.
 
 Data representation:
