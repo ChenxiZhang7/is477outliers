@@ -1,5 +1,5 @@
 # Final Project Plan
-### Team Outliers: Chenxi Zhang, Ethan HungEthan, HungMustafa El Zayyat
+### Team Outliers: Chenxi Zhang, Ethan Hung, Mustafa El Zayyat
 
 
 
