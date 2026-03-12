@@ -101,16 +101,16 @@ Constraints:
 
 Some restrictions may affect the scope and interpretation of our analysis.
 
-Data frequency difference
+Data frequency difference:
 The jet fuel price dataset is reported daily, while the air ticket price is reported monthly. To integrate these datasets, we will summarize the daily fuel prices into monthly average prices. This aggregation may mitigate short term fluctuations and make it more difficult to detect immediate responses between variables.
 
-Data representation
+Data representation:
 The dataset we use may not fully represent all aspects of the aviation market. For instance, the jet fuel dataset reflects fuel prices in the US Gulf Coast market, which is a major benchmark but may not represent fuel costs in all regions. Furthermore, the TSA's passenger throughput dataset measures the number of passengers passing through security checkpoints and may not fully represent the demands of airlines.
 
-External market influence
+External market influence:
 Air ticket prices are also influenced by many external factors that are not included in our datasets, such as competitions, economic factors or geopolitical events. Since these variables are not included, it may be difficult to tell the exact impact of fuel prices or passenger demand on air ticket prices.
 
-Limited time coverage
+Limited time coverage:
 Our analysis focuses on the latest data from about past five years. Although this helps us study the recent trends, it may limit our ability to observe the longer patterns of airline pricing or fuel cost changes.
 
 
