@@ -26,7 +26,6 @@ Research or Business Question(s):
 How do fuel prices and passenger demand influence airline ticket prices and flight volumes in the U.S. airline market?
 
 
-
 Datasets:
   
    Dataset 1: Flight Operations / Passenger Demand (Ethan)
@@ -64,6 +63,7 @@ Datasets:
     Variables: Airfare price index (Consumer Price Index) & Date
 
     Description: This dataset provides a monthly index for measuring changes in air ticket prices in the United States. These data are from the consumer price index (CPI) released by the Bureau of Labor Statistics of the United States and are published through the Federal Reserve's Economic Data (FRED) database. The air ticket price index reflects the average price trend of air tickets purchased by consumers in American cities. In our project, the dataset will be used to represent the overall trend of air ticket prices in the US market. Since the data is reported monthly, it can be easily integrated with other. By combining jet fuel price data and passenger demand data, this dataset will help analyze how fluctuations in fuel costs and travel demand affect air ticket pricing over time.
+
 
 
 
