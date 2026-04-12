@@ -70,6 +70,13 @@ The expected outputs include correlation statistics between daily violation coun
   - Description: This dataset contains detailed records of traffic crashes occurring within the City of Chicago under the jurisdiction of the Chicago Police Department (CPD). Each record represents a single crash event and includes information such as crash date and time, location, environmental conditions, and contributing factors. The data are sourced from CPD’s electronic crash reporting system (E-Crash) and are updated as reports are finalized or amended.
 The dataset includes both police-reported crashes and self-reported incidents, though some variables (e.g., weather, road conditions) are based on the reporting officer’s best available information at the time and may contain inconsistencies. Citywide coverage is available starting from September 2017. Crashes outside CPD jurisdiction (e.g., on interstate highways) are excluded.
 
+ ### Dataset Integration                              
+                                                         
+The three datasets will be integrated in two steps. First, the Traffic Crashes – Crashes dataset and the Traffic Crashes – People dataset will be joined using the shared `CRASH_RECORD_ID` identifier, which uniquely identifies each crash event across both datasets. This allows person-level injury records to be linked directly to their corresponding crash events.        
+
+ Second, the integrated crash dataset will be connected to the Speed Camera Violations dataset using date as a shared temporal key. Since crash and violation records do not share a geographic identifier, both datasets will be aggregated to the daily level using CRASH_DATE and VIOLATION_DATE respectively, and merged by date to enable temporal analysis of enforcement activity alongside crash frequency and injury outcomes.
+
+
 ---
 
 ## Timeline:
