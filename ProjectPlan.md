@@ -7,7 +7,7 @@
 
 This project investigates whether a relationship exists between automated speed camera enforcement, traffic crash occurrences, and crash-related injuries in Chicago. Using three publicly available datasets from the Chicago Data Portal, Speed Camera Violations, Traffic Crashes – Crashes, and Traffic Crashes – People, we aim to identify spatial and temporal patterns that connect enforcement activity to crash frequency and injury outcomes across the city.
 
-Our approach involves three main steps. First, we will clean and integrate the three datasets by linking crash records and person-level injury data through a shared Date field, and spatially matching speed camera locations to nearby crash events. Second, we will conduct exploratory data analysis to describe the distribution of violations, crashes, and injuries across time, location, and road user type, identifying high-risk zones and periods where enforcement activity and crash severity overlap.
+Our approach involves three main steps. First, we will clean and integrate the three datasets by linking crash records and person-level injury data through a shared date field, and spatially matching speed camera locations to nearby crash events. Second, we will conduct exploratory data analysis to describe the distribution of violations, crashes, and injuries across time, location, and road user type, identifying high-risk zones and periods where enforcement activity and crash severity overlap.
 
 By combining enforcement data with crash-level and person-level records, this project aims to provide evidence on how Chicago's automated speed enforcement program relates to traffic safety outcomes. The findings will contribute to a broader understanding of what factors most strongly predict crash occurrences and injuries, and may offer insights. 
 
@@ -39,7 +39,7 @@ The expected outputs include correlation statistics between daily violation coun
 
 ## Datasets:
   
-   ### Dataset 1: Speed Camera Violations 
+### Dataset 1: Speed Camera Violations 
    
    - Source: City of Chicago Data Portal
     
@@ -49,7 +49,7 @@ The expected outputs include correlation statistics between daily violation coun
    
    - Description: This dataset reflects the daily volume of violations that have occurred in Children's Safety Zones for each camera. The data reflects violations that occurred from July 1, 2014 until present, minus the most recent 14 days. This data may change due to occasional time lags between the capturing of a potential violation and the processing and determination of a violation. The reported violations are those that have been collected by the camera and radar system and reviewed by two separate City contractors. Each row within the set represents the number of violations recorded by a specific camera on a given day which makes the dataset a time series panel of enforcement activity. Some of the variables included within the dataset are identifying information such as the address, unique camera ID, a timestamp indicating when the violation occurred, and the total number of violations observed.
    
-  ### Dataset 2: Traffic Crashes – People
+### Dataset 2: Traffic Crashes – People
     
   - Source: City of Chicago Data Portal
   
@@ -59,7 +59,7 @@ The expected outputs include correlation statistics between daily violation coun
 
   - Description: The Traffic Crashes – People dataset contains information about individuals involved in traffic crashes in Chicago and whether they were injured. Each row represents one person involved in a crash, including drivers, passengers, pedestrians, or cyclists. The dataset includes characteristics such as age, gender, safety equipment use, airbag deployment, and injury classification. Records can be linked to crash events and vehicles using the shared CRASH_RECORD_ID, allowing analysis of how crash conditions and vehicle involvement relate to injuries.
 
-  ### Dataset 3: Traffic Crashes - Crashes
+### Dataset 3: Traffic Crashes - Crashes
   
   - Source: City of Chicago Data Portal
     
@@ -79,7 +79,7 @@ The three datasets will be integrated in two steps. First, the Traffic Crashes �
 
 ---
 
-## Timeline:
+ ## Timeline:
 
   ### Phase 1 — Project Planning (Before Apr 12) —  *Completed*                                            
                                                          
