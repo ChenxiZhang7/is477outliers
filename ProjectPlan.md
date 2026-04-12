@@ -35,39 +35,54 @@ Is there a relationship between speed camera violations, traffic crashes, and cr
 ## Datasets:
   
    ### Dataset 1: Speed Camera Violations 
-   - Source: Transportation Security Administration (TSA)
-    
-   - Dataset: TSA Checkpoint Travel Numbers
-    
-   - Link: https://www.tsa.gov/travel/passenger-volumes
    
-   - Variables: Date, Passenger throughput (# of passengers screened)
-   
-   - Description: This dataset reports the number of passengers moving through TSA airport security checkpoints each day in the United States; passenger throughput can be used as a proxy for airline travel demand because most commercial airline passengers pass through TSA screening before departure. Also, for this project, we will use data from 2021 to 2026 to align with the fuel price and airline ticket price           datasets. Moreover, because the fuel and ticket price data will be analyzed at a monthly level, the daily TSA data will likely be aggregated into monthly passenger totals or averages for integration.
-   
-  ### Dataset 2: Jet fuel prices in past 5 years (Mustafa)
+   - Source: City of Chicago Data Portal
     
-  - Source: U.S. Energy Information Administration (EIA) via Federal Reserve Economic Data (FRED)
+   - Link: https://www.tsa.gov/travel/passenger-volumes](https://data.cityofchicago.org/Transportation/Speed-Camera-Violations/hhkd-xvj4/about_data )
+   
+   - Variables: ├────────────────┤                                     
+  │ ADDRESS        │                                     
+  ├────────────────┤
+  │ CAMERA_ID      │                                     
+  ├────────────────┤                                   
+  │ VIOLATION_DATE │
+  ├────────────────┤
+  │ VIOLATIONS     │
+  ├────────────────┤
+  │ X_COORDINATE   │
+  ├────────────────┤
+  │ Y_COORDINATE   │
+  ├────────────────┤
+  │ LATITUDE       │
+  ├────────────────┤                          
+  │ LONGITUDE      │                      
+  ├────────────────┤
+  │ LOCATION       │                                     
+  └────────────────┘
+   
+   - Description: This dataset reflects the daily volume of violations that have occurred in Children's Safety Zones for each camera. The data reflects violations that occurred from July 1, 2014 until present, minus the most recent 14 days. This data may change due to occasional time lags between the capturing of a potential violation and the processing and determination of a violation. The reported violations are those that have been collected by the camera and radar system and reviewed by two separate City contractors. Each row within the set represents the number of violations recorded by a specific camera on a given day which makes the dataset a time series panel of enforcement activity. Some of the variables included within the dataset are identifying information such as the address, unique camera ID, a timestamp indicating when the violation occurred, and the total number of violations observed.
+   
+  ### Dataset 2: Traffic Crashes – People
+    
+  - Source: City of Chicago Data Portal
   
-  - Dataset: Kerosene-Type Jet Fuel Prices: U.S. Gulf Coast (DJFUELUSGULF)
+  - Link: https://data.cityofchicago.org/Transportation/Traffic-Crashes-People/u6pd-qa9d/about_data 
   
-  - Link: https://fred.stlouisfed.org/series/DJFUELUSGULF
+  - Variables:
+  - 
+  - Description: The Traffic Crashes – People dataset contains information about individuals involved in traffic crashes in Chicago and whether they were injured. Each row represents one person involved in a crash, including drivers, passengers, pedestrians, or cyclists. The dataset includes characteristics such as age, gender, safety equipment use, airbag deployment, and injury classification. Records can be linked to crash events and vehicles using the shared CRASH_RECORD_ID, allowing analysis of how crash conditions and vehicle involvement relate to injuries.
+
+  ### Dataset 3: Traffic Crashes - Crashes
   
-  - Variables: Jet fuel price (Dollars per gallon) and Date
-  
-  - Description: This dataset provides daily spot prices for kerosene-type jet fuel in the U.S. Gulf Coast market, which is one of the primary fuel pricing benchmarks used by airlines in North America. The dataset is reported in dollars per gallon and is not seasonally adjusted. For this project, we will focus on the last five years of data (2021–2026) to analyze recent pricing dynamics. Because airline ticket pricing data is typically available at a monthly or quarterly frequency, the daily fuel price observations might need to be aggregated to a monthly average to enable integration with other datasets.
+  - Source: City of Chicago Data Portal
+    
+  - Link: https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if/about_data
+    
+  - Variables: 
 
-  ### Dataset 3: Airline Ticket Prices (Chenxi)
-  
-  - Source: U.S. Bureau of Labor Statistics (BLS) via Federal Reserve Economic Data (FRED)
+  - Description: This dataset contains detailed records of traffic crashes occurring within the City of Chicago under the jurisdiction of the Chicago Police Department (CPD). Each record represents a single crash event and includes information such as crash date and time, location, environmental conditions, and contributing factors. The data are sourced from CPD’s electronic crash reporting system (E-Crash) and are updated as reports are finalized or amended.
+The dataset includes both police-reported crashes and self-reported incidents, though some variables (e.g., weather, road conditions) are based on the reporting officer’s best available information at the time and may contain inconsistencies. Citywide coverage is available starting from September 2017. Crashes outside CPD jurisdiction (e.g., on interstate highways) are excluded.
 
-  - Dataset: Consumer Price Index for All Urban Consumers: Airline Fares in U.S. City Average 
-
-  - Link: https://fred.stlouisfed.org/series/CUUR0000SETG01
-
-  - Variables: Airfare price index (Consumer Price Index) & Date
-
-  - Description: This dataset provides a monthly index for measuring changes in air ticket prices in the United States. These data are from the consumer price index (CPI) released by the Bureau of Labor Statistics of the United States and are published through the Federal Reserve's Economic Data (FRED) database. The air ticket price index reflects the average price trend of air tickets purchased by consumers in American cities. In our project, the dataset will be used to represent the overall trend of air ticket prices in the US market. Since the data is reported monthly, it can be easily integrated with other data sets. By combining jet fuel price data and passenger demand data, this dataset will help analyze how fluctuations in fuel costs and travel demand affect air ticket pricing over time.
 
 
 
