@@ -149,15 +149,11 @@ The three datasets will be integrated in two steps. First, the Traffic Crashes �
 
                                                  
    
-  ### Phase 3 — Analysis and Final Development (Apr 20 – May 3)                                               
-
-  - **Spatial matching of cameras to crashes** (Apr 22) — *Mustafa / Chenxi*
-                         
-    Match speed camera locations to nearby crash events using latitude and longitude, since no shared geographic identifier exists between the two datasets. *(Module 7-8: Data integration)*                       
+  ### Phase 3 — Analysis and Final Development (Apr 20 – May 3)                                                                 
                                                          
   - **Perform detailed analysis** (Apr 25) — *All*
     
-    Analyze the relationship between daily violation counts and crash frequency and injury severity, controlling for time and location. *(Module 1: Data lifecycle)*
+    Analyze the relationship between daily violation counts and crash frequency and injury severity, controlling for time and location. 
                                                          
   - **Create visualizations** (Apr 26) — *All*
       
