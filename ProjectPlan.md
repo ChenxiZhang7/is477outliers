@@ -29,6 +29,12 @@ By combining enforcement data with crash-level and person-level records, this pr
 
 Is there a relationship between speed camera violations, traffic crashes, and crash injuries in Chicago? (What factors are most strongly associated with traffic crash occurrences in Chicago?)
 
+We will combine the Traffic Crashes – Crashes dataset and the Traffic Crashes – People dataset to analyze how crash-level conditions such as weather, road surface, lighting, and posted speed limit relate to person-level injury outcomes including injury classification, deployment, and ejection status. Person-level records will be aggregated to the crash level using the shared CRASH_RECORD_ID`, and injury severity distributions will be compared across crash conditions.
+
+Together, all three datasets will be integrated using date as the shared temporal key, connecting daily activity (Speed Camera Violations) to daily crash counts (Traffic Crashes – Crashes) to individual injury records (Traffic Crashes – People), allowing us to examine whether days and periods with higher enforcement activity correspond to differences in crash frequency and injury outcomes.
+
+The expected outputs include correlation statistics between daily violation counts and crash frequency, summary tables of injury rates by crash condition, and time series visualizations showing enforcement activity alongside crash and injury trends across Chicago.
+
 ---
 
 ## Datasets:
