@@ -1,7 +1,7 @@
 # Final Project Plan
 #### Team Outliers: Chenxi Zhang, Ethan Hung, Mustafa El Zayyat
 
-
+---
 
 ## Overview: 
 
@@ -11,8 +11,7 @@ Our approach involves three main steps. First, we will clean and integrate the t
 
 By combining enforcement data with crash-level and person-level records, this project aims to provide evidence on how Chicago's automated speed enforcement program relates to traffic safety outcomes. The findings will contribute to a broader understanding of what factors most strongly predict crash occurrences and injuries, and may offer insights. 
 
-
-
+---
 
 ## Team: 
 
@@ -24,13 +23,13 @@ By combining enforcement data with crash-level and person-level records, this pr
 
   Ethan Hung: Will work with the traffic crashes people dataset and focus on cleaning and       organizing person-level crash data, handling variables such as person ID, person type (driver/passenger), crash record ID, vehicle ID, crash date, and demographic information. Also, I will standardize fields related to occupant safety and injury outcomes, including safety equipment usage, airbag deployment, ejection status, and injury classification. Moreover, I will collaborate with team members on analysis and data integration to ensure person-level records are correctly linked with other datasets using shared identifiers.
 
-
+---
 
 ## Research or Business Question: 
 
 Is there a relationship between speed camera violations, traffic crashes, and crash injuries in Chicago? (What factors are most strongly associated with traffic crash occurrences in Chicago?)
 
-
+---
 
 ## Datasets:
   
@@ -65,43 +64,119 @@ Is there a relationship between speed camera violations, traffic crashes, and cr
   - Description: This dataset contains detailed records of traffic crashes occurring within the City of Chicago under the jurisdiction of the Chicago Police Department (CPD). Each record represents a single crash event and includes information such as crash date and time, location, environmental conditions, and contributing factors. The data are sourced from CPD’s electronic crash reporting system (E-Crash) and are updated as reports are finalized or amended.
 The dataset includes both police-reported crashes and self-reported incidents, though some variables (e.g., weather, road conditions) are based on the reporting officer’s best available information at the time and may contain inconsistencies. Citywide coverage is available starting from September 2017. Crashes outside CPD jurisdiction (e.g., on interstate highways) are excluded.
 
-
-
-
+---
 
 ## Timeline:
 
-### Phase 1: Project Planning (Before Apr 12)
+  ### Phase 1 — Project Planning (Before Apr 12) —  *Completed*                                            
+                                                         
+  - **Finalize research questions** (Apr 10) — *All*
+         
+    Define the primary and secondary research questions about the relationship between speed camera enforcement, crash frequency, and injury outcomes in Chicago.
+                                                         
+  - **Identify and evaluate datasets** (Apr 10) — *All*
+    
+    Select three datasets from the Chicago Data Portal, confirm they are from trustworthy sources, and verify that they can be meaningfully integrated. *(Module 4: Data collection and acquisition)*
+                                                         
+  - **Review licenses and terms of use** (Apr 10) — *All*
+    
+    Identify any ethical, legal, or privacy constraints associated with each dataset and document how they will be addressed. *(Module 3: Ethical data handling)*
 
-1.	Finalize research question related to fuel prices, passenger demand, and airline ticket prices.
-2.	Find appropriate datasets from reliable sources.
-3.	Review the structure of the datasets and confirm that they can be combined.
-4.	Set up the GitHub repository and organize the project files.
-5.	Prepare and submit the project plan.
+  - **Explore dataset structures** (Apr 11) — *All*
+          
+    Inspect column names, data types, and shared identifiers across all three datasets to confirm integration is feasible. *(Module 7-8: Data integration)*
+                                                         
+  - **Set up GitHub repository and project structure** (Apr 11) — *All*
+                                           
+    Create the shared GitHub repository, define folder structure and file naming conventions, and add all team members. *(Module 2: Files, storage and organization)*
 
-### Phase 2: Data Cleaning and Integration (March 13 – March 31)
+  - **Prepare and submit ProjectPlan.md** (Apr 12) — *All*
+    
+    Write and commit the project plan in Markdown, create a `project-plan` release, and submit the URL to Canvas.                                 
 
-1.	Collect the datasets related to airline ticket prices, passenger demand, and jet fuel prices.
-2.	Review the datasets to understand their structure and check for potential issues.
-3.	Clean the data, like handling missing values or adjusting formats.
-4.	Combine the datasets using shared attributes such as time period.
-5.	Create some charts or summary statistics to explore the data.
-6.	Write and submit the Status Report.
+                                         
+   
+  ### Phase 2 — Data Cleaning and Initial Integration    
+  (Apr 13 – Apr 19)                                    
 
-### Phase 3: Analysis and Final Project (April 1 – May 3)
+  - **Download datasets and verify integrity** (Apr 13) — *Mustafa*
+                                  
+    Programmatically download all three datasets using the Chicago Data Portal API and compute SHA-256 checksums to verify file integrity. *(Module 4: Data collection and acquisition)*                           
+                                                         
+  - **Profile each dataset** (Apr 14) — *Chenxi / Ethan / Mustafa*
+                                                  
+    Assess the shape, data types, missing value rates, and value distributions for each dataset. Document data quality issues such as nulls, inconsistencies, and unexpected values. *(Module 10: Data quality)*         
+                                                         
+  - **Clean Traffic Crashes – Crashes dataset** (Apr 15) — *Chenxi*
+                                                 
+    Standardize date and time formats, handle missing values in weather and road condition fields, and remove or flag records with unknown contributing factors. *(Module 11-12: Data cleaning)*
+                                                         
+  - **Clean Traffic Crashes – People dataset** (Apr 15) — *Ethan*
+                                                  
+    Standardize injury classification categories, filter out records with missing person type or crash record IDs, and handle entries coded as UNKNOWN or NOT APPLICABLE. *(Module 11-12: Data cleaning)*
+                                                         
+  - **Clean Speed Camera Violations dataset** (Apr 15) — *Mustafa*
+                                                 
+    Parse and standardize violation dates, handle missing or malformed location fields, and verify camera IDs are consistent across records. *(Module 11-12: Data cleaning)*                                             
+                                                         
+  - **Aggregate person-level data to crash level** (Apr 16) — *Ethan*
+                                               
+    Group the Traffic Crashes – People dataset by CRASH_RECORD_ID` to produce crash-level summaries of injury counts, injury severity, and safety equipment usage. *(Module 7-8: Data integration)*                
+                                                         
+  - **Integrate Crashes and People datasets** (Apr 17) — *Chenxi / Ethan*
+                                         
+    Join the aggregated people data to the crashes dataset using `CRASH_RECORD_ID` as the shared key, and validate the merge for completeness and correctness.  *(Module 7-8: Data integration)*
+                                                         
+  - **Conduct initial exploratory data analysis** (Apr 18) — *All*
+                                              
+    Examine distributions of crash counts, violation    frequencies, and injury rates over time and across locations to identify patterns and inform later analysis.
+                                                         
+  - **Prepare and submit StatusReport.md** (Apr 19) — *All*                                                  
+    Write and commit the interim status report in  Markdown, create a `status-report` release, and submit the URL to Canvas.                      
 
-1.	Further analyze the relationship between fuel prices, ticket prices, and passenger demand.
-2.	Create visualizations to show important trends and patterns.
-3.	Prepare scripts that organize the data processing steps.
-4.	Document the data cleaning process and analysis workflow.
-5.	Write the final project report and organize the repository.
-6.	Submit the Final Project.
+                                                 
+   
+  ### Phase 3 — Analysis and Final Development (Apr 20 – May 3)                                               
 
+  - **Spatial matching of cameras to crashes** (Apr 22) — *Mustafa / Chenxi*
+                         
+    Match speed camera locations to nearby crash events using latitude and longitude, since no shared geographic identifier exists between the two datasets. *(Module 7-8: Data integration)*                       
+                                                         
+  - **Perform detailed analysis** (Apr 25) — *All*
+    
+    Analyze the relationship between daily violation counts and crash frequency and injury severity, controlling for time and location. *(Module 1: Data lifecycle)*
+                                                         
+  - **Create visualizations** (Apr 26) — *All*
+      
+    Generate time series plots, spatial maps of high-risk zones, and injury breakdown charts to illustrate key findings.                               
 
+  - **Write data dictionary and codebook** (Apr 27) — *All*
+                                      
+    Document each variable in all three datasets including name, type, description, and known quality issues. *(Module 15: Metadata and data documentation)*
+                                                         
+  - **Write machine-readable metadata** (Apr 28) — *All*
+    
+    Create a metadata file conforming to a standard schema (DCAT or Schema.org) to support discoverability and reuse of the project datasets. *(Module 15: Metadata and data documentation)*
+                                                         
+  - **Develop Snakemake workflow** (Apr 29) — *All*
+    
+    Build an automated end-to-end Snakemake workflow covering data acquisition, cleaning, integration, and analysis so the full pipeline can be re-executed from scratch. *(Module 13: Workflow automation and provenance)*                                           
+   
+  - **Write requirements.txt and verify reproducibility** (Apr 30) — *All*
+                                
+    Record all software dependencies and verify that the full workflow runs successfully in a clean environment from data acquisition through final results. *(Module 14: Reproducibility and provenance)*                   
+                                                         
+  - **Write final README.md report** (May 2) — *All*
+    
+    Complete all required report sections including summary, data profile, data quality, data cleaning, findings, challenges, and reproduction steps.
+
+  - **Create `final-project` release and submit to Canvas** (May 3) — *All*
+    
+    Commit all artifacts, create the `final-project` tag  and release on GitHub, and submit the release URL to Canvas by the deadline.
+
+---
 
 ## Constraints:
-
-Some restrictions may affect the scope and interpretation of our analysis.
 
 ### Different Levels of Detail Across Datasets
 One challenge in this project is that the three datasets are structured at different levels. The Traffic Crashes – Crashes dataset records information about each crash event, the Traffic Crashes – People dataset records information about every individual involved in a crash, and the Speed Camera Violations dataset records the number of violations per camera on each day. Because multiple people can be involved in a single crash, the people dataset must therefore  be aggregated to the crash level using CRASH_RECORD_ID before it can be compared with crash events and enforcement data. Also, linking crashes to speed camera activity will also require matching records based on date and approximate location, since crashes are not recorded directly at camera locations.
@@ -115,7 +190,7 @@ Some variables in the crash and people datasets contain missing or unclear value
 ### Limits of the Data for Explaining Causes
 Finally, the datasets do not directly measure overall traffic exposure or driving behavior; the speed camera dataset records violations detected by cameras, but this does not necessarily reflect all speeding activity in an area. Similarly,  crash records show where crashes occurred but do not include factors like traffic volume. Because of this, the project can identify patterns and relationships between enforcement activity, crashes, and injuries, but it cannot entirely determine whether speed cameras cause changes in crash outcomes.
 
-
+---
 
 ## Gaps:
 
