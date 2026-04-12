@@ -5,7 +5,12 @@
 
 ## Overview: 
 
-The goal of this project is to analyze how airline ticket prices change in relation to jet fuel prices and demand related factors. Airline pricing is influenced by many variables, including operational costs (such as  jet fuel), consumer demand, seasonality, and broader economic conditions. Jet fuel is one of the largest variable costs for airlines, so fluctuations in fuel prices may influence ticket pricing strategies. Our project will investigate whether increases or decreases in jet fuel prices and customer demand are associated with changes in airline ticket prices over the past five years. In addition, we will incorporate demand related indicators such as passenger volumes to better understand how supply and demand interact with cost pressures in determining prices. To accomplish this, we will collect multiple datasets that can be linked by common attributes. These datasets will include airline ticket price data, jet fuel price data, and passenger demand metrics. We will clean and standardize the data, integrate the datasets into a unified structure, and conduct exploratory data analysis to identify trends, correlations, and potential lag effects between fuel prices, demand, and ticket prices.The final analysis will include visualizations and statistical summaries that illustrate the relationships between these variables and provide insight into how airline pricing responds to changes in cost and demand conditions.
+This project investigates whether a relationship exists between automated speed camera enforcement, traffic crash occurrences, and crash-related injuries in Chicago. Using three publicly available datasets from the Chicago Data Portal, Speed Camera Violations, Traffic Crashes – Crashes, and Traffic Crashes – People, we aim to identify spatial and temporal patterns that connect enforcement activity to crash frequency and injury outcomes across the city.
+
+Our approach involves three main steps. First, we will clean and integrate the three datasets by linking crash records and person-level injury data through a shared Date field, and spatially matching speed camera locations to nearby crash events. Second, we will conduct exploratory data analysis to describe the distribution of violations, crashes, and injuries across time, location, and road user type, identifying high-risk zones and periods where enforcement activity and crash severity overlap.
+
+By combining enforcement data with crash-level and person-level records, this project aims to provide evidence on how Chicago's automated speed enforcement program relates to traffic safety outcomes. The findings will contribute to a broader understanding of what factors most strongly predict crash occurrences and injuries, and may offer insights. 
+
 
 
 
@@ -13,24 +18,23 @@ The goal of this project is to analyze how airline ticket prices change in relat
 
   Our project team consists of three members, each responsible for managing one dataset and contributing to integration and analysis.
 
-  - Fuel Cost Analysis (Mustafa): Collect and process the jet fuel price dataset, Clean and format fuel price data, Preparing the dataset for integration with other datasets
+  Chenxi Zhang: Will work with the traffic crashes – crashes dataset and focus on cleaning and organizing crash-level event data, handling variables such as crash date, time, location, weather conditions, and contributing factors. I will be responsible for standardizing key fields and preparing the dataset for integration with other datasets using shared identifiers. I will assist in aggregating crash level information and aligning it with person level injury data and speed camera violations data through temporal and spatial matching. I will also collaborate with team members on analysis and data integration to ensure that the datasets are correctly linked and consistent across different levels of detail.
 
-  - Ticket Price Analysis (Chenxi): Responsible for collecting airline ticket price data, Cleaning price data and ensuring consistent formatting, Aggregating ticket prices by time period, Preparing dataset for integration
+  Mustafa El Zayyat: Will work with speed camera violations dataset and focus on cleaning and organizing the time series data, handling variables such as camera ID, location, and daily violation counts. I would also be responsible for preparing spatial information (camera locations) if necessary and summarizing enforcement intensity over time and across locations. Will also collaborate with team members on analysis and data integration to ensure that the datasets are correctly linked using shared identifiers. 
 
-  - Demand and Passenger Data Analysis (Ethan): Responsible for collecting airline demand data (e.g., passenger counts or load factors), Cleaning and preparing passenger demand dataset, Standardizing time variables, Assisting with final integration and visualization
-
+  Ethan Hung: Will work with the traffic crashes people dataset and focus on cleaning and       organizing person-level crash data, handling variables such as person ID, person type (driver/passenger), crash record ID, vehicle ID, crash date, and demographic information. Also, I will standardize fields related to occupant safety and injury outcomes, including safety equipment usage, airbag deployment, ejection status, and injury classification. Moreover, I will collaborate with team members on analysis and data integration to ensure person-level records are correctly linked with other datasets using shared identifiers.
 
 
 
 ## Research or Business Question: 
 
-How do fuel prices and passenger demand influence airline ticket prices in the U.S. airline market?
+Is there a relationship between speed camera violations, traffic crashes, and crash injuries in Chicago? (What factors are most strongly associated with traffic crash occurrences in Chicago?)
 
 
 
 ## Datasets:
   
-   ### Dataset 1: Flight Operations / Passenger Demand (Ethan)
+   ### Dataset 1: Speed Camera Violations 
    - Source: Transportation Security Administration (TSA)
     
    - Dataset: TSA Checkpoint Travel Numbers
@@ -70,7 +74,7 @@ How do fuel prices and passenger demand influence airline ticket prices in the U
 
 ## Timeline:
 
-### Phase 1: Project Planning and Dataset Selection (March 1 – March 12)
+### Phase 1: Project Planning (Before Apr 12)
 
 1.	Finalize research question related to fuel prices, passenger demand, and airline ticket prices.
 2.	Find appropriate datasets from reliable sources.
@@ -102,22 +106,22 @@ How do fuel prices and passenger demand influence airline ticket prices in the U
 
 Some restrictions may affect the scope and interpretation of our analysis.
 
-### Data integration:
-The jet fuel price dataset is reported daily, while the air ticket price is reported monthly. To integrate these datasets, we will summarize the daily fuel prices into monthly average prices. This aggregation may mitigate short term fluctuations and make it more difficult to detect immediate responses between variables.
+### Different Levels of Detail Across Datasets
+One challenge in this project is that the three datasets are structured at different levels. The Traffic Crashes – Crashes dataset records information about each crash event, the Traffic Crashes – People dataset records information about every individual involved in a crash, and the Speed Camera Violations dataset records the number of violations per camera on each day. Because multiple people can be involved in a single crash, the people dataset must therefore  be aggregated to the crash level using CRASH_RECORD_ID before it can be compared with crash events and enforcement data. Also, linking crashes to speed camera activity will also require matching records based on date and approximate location, since crashes are not recorded directly at camera locations.
+ 
+### Differences in Time and Location Information
+Another limitation is that the datasets record time and location in different ways; speed camera data reports the total number of violations per camera per day, while crash data includes more detailed timestamps and addresses. Thus, to make the datasets comparable, crash records may need to be grouped at the daily level, which reduces some of the detail in the crash timing. In addition, crashes and cameras do not share a common geographic identifier, so crashes will need to be matched to nearby cameras using location information; this means the relationship between enforcement zones and crashes can only be estimated.
 
-### Data representation:
-The dataset we use may not fully represent all aspects of the aviation market. For instance, the jet fuel dataset reflects fuel prices in the US Gulf Coast market, which is a major benchmark but may not represent fuel costs in all regions. Furthermore, the TSA's passenger throughput dataset measures the number of passengers passing through security checkpoints and may not fully represent the demands of airlines.
-
-### External market influence:
-Air ticket prices are also influenced by many external factors that are not included in our datasets, such as competitions between Airlines, economic factors or geopolitical events. Since these variables are not included, it may be difficult to tell the exact impact of fuel prices or passenger demand on air ticket prices.
-
-### Limited time coverage:
-Our analysis focuses on the latest data from about past five years. Although this helps us study the recent trends, it may limit our ability to observe the longer patterns of airline pricing or fuel cost changes.
+### Data Quality and Missing Information
+Some variables in the crash and people datasets contain missing or unclear values. Fields such as injury classification, safety equipment use, driver vision, and contributing factors often contain entries like “UNKNOWN” or “NOT APPLICABLE.” As a result, these values can limit certain analyses or require us to filter or group categories during data cleaning. Also, in some cases, the information in crash reports is based on the reporting officer’s assessment at the time, which may lead to inconsistencies across records.
+ 
+### Limits of the Data for Explaining Causes
+Finally, the datasets do not directly measure overall traffic exposure or driving behavior; the speed camera dataset records violations detected by cameras, but this does not necessarily reflect all speeding activity in an area. Similarly,  crash records show where crashes occurred but do not include factors like traffic volume. Because of this, the project can identify patterns and relationships between enforcement activity, crashes, and injuries, but it cannot entirely determine whether speed cameras cause changes in crash outcomes.
 
 
 
 ## Gaps:
 
-Existing research looks at the relationship between airline ticket prices and individual factors such as fuel costs or overall travel demand; however, fewer analyses combine multiple operational and demand-related indicators in a single framework to evaluate how these factors actually interact over time. 
+One area that could be considered a gap is the disparity in the datasets' levels of detail. The crash dataset is at the event level, the speed camera data is arranged by camera and day, and the person's dataset is at the individual level. Our team will have to choose a consistent unit of analysis and aggregate the person level data to match crash level or location level data in order to draw meaningful comparisons.
 
-Thus, this project aims to address that gap by integrating factors like jet fuel prices, passenger throughput data, and airline ticket price indices into one unified dataset. By analyzing these variables together, we therefore hope to better understand how cost pressures and demand conditions jointly influence airline pricing behavior in the U.S. market.
+Another significant area is data quality gaps, such as incomplete or missing values in categories like the severity of injuries, the use of safety equipment, and demographic data. These problems will require us to make choices regarding missing data processing or filtering. Furthermore, it is still necessary to specify important variables and metrics, such as how to define crash frequency, injury severity, and enforcement.
