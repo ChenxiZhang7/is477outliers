@@ -203,12 +203,12 @@ Finally, the datasets do not directly measure overall traffic exposure or drivin
 
 ## Gaps:
 
-### Lack of Contextual Information: 
+Lack of Contextual Information: 
 The datasets do not include information on when speed cameras were installed or any policy changes related to enforcement and without this context, it could be difficult to evaluate whether changes in violations or crashes are linked to program implementation or external factors. While crash data includes contributing factors, it lacks deeper behavioral context such as driver intent or distraction levels beyond reported categories and real time traffic dynamics. This can limit the ability to fully assess the reason that crashes occur in certain areas with enforcement.
 
-### Lack of baseline data for comparison purposes: 
+Lack of baseline data for comparison purposes: 
 The data is limited to Chicago, with no built in comparison to areas without speed cameras or other cities and jurisdictions. Without a benchmark, it could be difficult to assess whether observed patterns are unique to Chicago or part of broader trends.
 
-### Visibility into overall safety is limited by assessment of actual crashes: 
+Visibility into overall safety is limited by assessment of actual crashes: 
 While crashes are recorded and included in analysis, there is limited visibility into unreported incidents.This can potentially create a gap in understanding the full safety landscape, as only the recorded crashes would be analyzed.
 
