@@ -72,7 +72,7 @@ The dataset includes both police-reported crashes and self-reported incidents, t
 
  ### Dataset Integration                              
                                                          
-The three datasets will be integrated in two steps. First, the Traffic Crashes – Crashes dataset and the Traffic Crashes – People dataset will be joined using the shared `CRASH_RECORD_ID` identifier, which uniquely identifies each crash event across both datasets. This allows person-level injury records to be linked directly to their corresponding crash events.        
+The three datasets will be integrated in two steps. First, the Traffic Crashes – Crashes dataset and the Traffic Crashes – People dataset will be joined using the shared CRASH_RECORD_ID identifier, which uniquely identifies each crash event across both datasets. This allows person-level injury records to be linked directly to their corresponding crash events.        
 
  Second, the integrated crash dataset will be connected to the Speed Camera Violations dataset using date as a shared temporal key. Since crash and violation records do not share a geographic identifier, both datasets will be aggregated to the daily level using CRASH_DATE and VIOLATION_DATE respectively, and merged by date to enable temporal analysis of enforcement activity alongside crash frequency and injury outcomes.
 
@@ -105,7 +105,7 @@ The three datasets will be integrated in two steps. First, the Traffic Crashes �
 
   - **Prepare and submit ProjectPlan.md** (Apr 12) — *All*
     
-    Write and commit the project plan in Markdown, create a `project-plan` release, and submit the URL to Canvas.                                 
+    Write and commit the project plan in Markdown, create a project-plan release, and submit the URL to Canvas.                                 
 
                                          
    
@@ -134,18 +134,18 @@ The three datasets will be integrated in two steps. First, the Traffic Crashes �
                                                          
   - **Aggregate person-level data to crash level** (Apr 16) — *Ethan*
                                                
-    Group the Traffic Crashes – People dataset by CRASH_RECORD_ID` to produce crash-level summaries of injury counts, injury severity, and safety equipment usage. *(Module 7-8: Data integration)*                
+    Group the Traffic Crashes – People dataset by CRASH_RECORD_ID to produce crash-level summaries of injury counts, injury severity, and safety equipment usage. *(Module 7-8: Data integration)*                
                                                          
   - **Integrate Crashes and People datasets** (Apr 17) — *Chenxi / Ethan*
                                          
-    Join the aggregated people data to the crashes dataset using `CRASH_RECORD_ID` as the shared key, and validate the merge for completeness and correctness.  *(Module 7-8: Data integration)*
+    Join the aggregated people data to the crashes dataset using CRASH_RECORD_ID as the shared key, and validate the merge for completeness and correctness.  *(Module 7-8: Data integration)*
                                                          
   - **Conduct initial exploratory data analysis** (Apr 18) — *All*
                                               
     Examine distributions of crash counts, violation    frequencies, and injury rates over time and across locations to identify patterns and inform later analysis.
                                                          
   - **Prepare and submit StatusReport.md** (Apr 19) — *All*                                                  
-    Write and commit the interim status report in  Markdown, create a `status-report` release, and submit the URL to Canvas.                      
+    Write and commit the interim status report in  Markdown, create a status-report release, and submit the URL to Canvas.                      
 
                                                  
    
@@ -179,9 +179,9 @@ The three datasets will be integrated in two steps. First, the Traffic Crashes �
     
     Complete all required report sections including summary, data profile, data quality, data cleaning, findings, challenges, and reproduction steps.
 
-  - **Create `final-project` release and submit to Canvas** (May 3) — *All*
+  - **Create final-project release and submit to Canvas** (May 3) — *All*
     
-    Commit all artifacts, create the `final-project` tag  and release on GitHub, and submit the release URL to Canvas by the deadline.
+    Commit all artifacts, create the final-project tag  and release on GitHub, and submit the release URL to Canvas by the deadline.
 
 ---
 
