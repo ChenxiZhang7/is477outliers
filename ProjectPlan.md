@@ -203,6 +203,12 @@ Finally, the datasets do not directly measure overall traffic exposure or drivin
 
 ## Gaps:
 
-One area that could be considered a gap is the disparity in the datasets' levels of detail. The crash dataset is at the event level, the speed camera data is arranged by camera and day, and the person's dataset is at the individual level. Our team will have to choose a consistent unit of analysis and aggregate the person level data to match crash level or location level data in order to draw meaningful comparisons.
+### Lack of Contextual Information: 
+The datasets do not include information on when speed cameras were installed or any policy changes related to enforcement and without this context, it could be difficult to evaluate whether changes in violations or crashes are linked to program implementation or external factors. While crash data includes contributing factors, it lacks deeper behavioral context such as driver intent or distraction levels beyond reported categories and real time traffic dynamics. This can limit the ability to fully assess the reason that crashes occur in certain areas with enforcement.
 
-Another significant area is data quality gaps, such as incomplete or missing values in categories like the severity of injuries, the use of safety equipment, and demographic data. These problems will require us to make choices regarding missing data processing or filtering. Furthermore, it is still necessary to specify important variables and metrics, such as how to define crash frequency, injury severity, and enforcement.
+### Lack of baseline data for comparison purposes: 
+The data is limited to Chicago, with no built in comparison to areas without speed cameras or other cities and jurisdictions. Without a benchmark, it could be difficult to assess whether observed patterns are unique to Chicago or part of broader trends.
+
+### Visibility into overall safety is limited by assessment of actual crashes: 
+While crashes are recorded and included in analysis, there is limited visibility into unreported incidents.This can potentially create a gap in understanding the full safety landscape, as only the recorded crashes would be analyzed.
+
